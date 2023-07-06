@@ -1,4 +1,4 @@
-GPR_SEAL stands for Ground Penetrating Radar Simple Easy-Accessible Library.
+GPR_SEAL stands for Ground Penetrating Radar Simple Easily Accessible Library.
 
 This library contains a bunch of Matlab functions to process 3D Ground Penetrating Radar data. The focus lies on simplicity. The goal is to provide a package that is easy to use for students new to the topic, such that they can be acquainted with 3D-GPR processing without frustration and get good results quickly without needing to write a lot of code.
 
