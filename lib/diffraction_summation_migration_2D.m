@@ -1,6 +1,6 @@
 function diffraction_summation_migration_2D(data,yfrac,xwin,fs)
 %
-% data = diffraction_summation_migration_2D(data,yfrac,xwin,fs)
+% diffraction_summation_migration_2D(data,yfrac,xwin,fs)
 % 
 % Performs a diffraction summation migration on a profile. This is the
 % simplest possible form of migration. 
