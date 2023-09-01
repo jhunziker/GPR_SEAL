@@ -8,6 +8,9 @@ Each function contains a short description of what it does and how it can be use
 help functionname
 where functionname is the name of the function in question.
 
+There are also some videos available here that guide you through the functionality of GPR_SEAL: 
+https://www.youtube.com/watch?v=ePcBjL3w63c&list=PLbYJ0bWIYj551wi_ixc4E25hOx1HpKRaN
+
 This file is part of GPR_SEAL. GPR_SEAL is free software: you can
 redistribute it and/or modify it under the terms of the GNU General
 Public License as published by the Free Software Foundation, either
