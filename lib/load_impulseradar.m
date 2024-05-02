@@ -69,6 +69,7 @@ for ifile=1:size(filenamemat,1)
                         ntraces=temp_ntraces;
                     end
                 end
+                break
             end
         end
     end
@@ -86,6 +87,7 @@ for ifile=1:size(filenamemat,1)
         if length(templine)>10
             if templine(1:10)=='LAST TRACE'
                 thisfile_ntraces = str2double(templine(12:end));
+                break
             end
         end
     end
