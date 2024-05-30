@@ -45,9 +45,9 @@ while(ftell(fidhead)<headersize)
             nsamples = str2double(templine(9:end));
         end
     end
-    if length(templine)>22
-        if templine(1:22)=='USER DISTANCE INTERVAL'
-            dx = str2double(templine(24:end));
+    if length(templine)>17
+        if templine(1:17)=='DISTANCE INTERVAL'
+            dx = str2double(templine(19:end));
         end
     end
 end

@@ -32,6 +32,7 @@ end
 dt = data.tvec(2)-data.tvec(1);
 twinel = round(twin/dt);
 
+tempcube = zeros(size(data.cube));
 for iy=1:size(data.cube,3)
     for ix=1:size(data.cube,2)
         for it=1:size(data.cube,1)
@@ -44,7 +45,10 @@ for iy=1:size(data.cube,3)
             else
                 temp = mean(data.cube(it-round(twinel/2):it+round(twinel/2),ix,iy));
             end
-            data.cube(it,ix,iy) = data.cube(it,ix,iy)-temp;
+            % A temporary cube is necessary, so that the mean to be
+            % subtracted is not influenced by the new values. 
+            tempcube(it,ix,iy) = data.cube(it,ix,iy)-temp;
         end
     end
 end
+data.cube = tempcube;
